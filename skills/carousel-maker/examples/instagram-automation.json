@@ -1,0 +1,421 @@
+{
+ "title": "Create a full\nautomation for\n[[Instagram reels]]",
+ "subtitle": "14 STEPS · ONE IDEA IN · ONE REEL OUT",
+ "label": "INSTAGRAM AUTOMATION",
+ "logo": "instagram",
+ "hub_logo": "claude",
+ "hub_text": "@YOURACCOUNT · REELS",
+ "accent": "#E1306C",
+ "platform": "instagram",
+ "steps": [
+  {
+   "label": "DISCOVERY",
+   "title": "The discovery engine",
+   "line": "Every day it searches new tools across 129 categories, rates each idea for virality, and drops what fails a single rule.",
+   "scene": "float",
+   "tools": "CLAUDE CODE · GITHUB · HACKER NEWS",
+   "data": {
+    "cards": [
+     [
+      "@github",
+      "github.com",
+      "Trending repo"
+     ],
+     [
+      "@hn",
+      "news.ycombinator.com",
+      "Show HN"
+     ],
+     [
+      "@reddit",
+      "reddit.com",
+      "r/SideProject"
+     ],
+     [
+      "@hf",
+      "huggingface.co",
+      "New model space"
+     ]
+    ],
+    "block": "CARDS",
+    "block_sub": "3 RATED A DAY"
+   },
+   "color": "#FF3B30"
+  },
+  {
+   "label": "APPROVAL",
+   "title": "You pick the ideas",
+   "line": "The best cards wait for you, ranked by score. One word from you puts an idea in the queue. Nothing is made without it.",
+   "scene": "stack",
+   "tools": "DISCOVERY CARDS · RANKING",
+   "data": {
+    "rows": [
+     "D-0041 · free CapCut rival · 87",
+     "D-0038 · local voice cloning · 81",
+     "D-0036 · AI thumbnail tester · 76",
+     "D-0031 · open source Notion · 64",
+     "D-0029 · screen recorder · 58"
+    ],
+    "tag": "RANKING.MD",
+    "first_label": "TOP"
+   },
+   "color": "#FF9500"
+  },
+  {
+   "label": "RESEARCH",
+   "title": "Research",
+   "line": "It opens the real pages of the tool, takes screenshots, and keeps every claim with a source. No source, no claim.",
+   "scene": "float",
+   "tools": "CLAUDE CODE · PLAYWRIGHT",
+   "data": {
+    "cards": [
+     [
+      "F01",
+      "the tool's website",
+      "Pricing page"
+     ],
+     [
+      "F04",
+      "github.com",
+      "Stars and license"
+     ],
+     [
+      "F07",
+      "docs",
+      "Setup in 5 min"
+     ],
+     [
+      "F09",
+      "a review",
+      "Real user test"
+     ]
+    ],
+    "block": "FACTS.MD",
+    "block_sub": "EVERY CLAIM SOURCED"
+   },
+   "color": "#E6B800"
+  },
+  {
+   "label": "HOOKS",
+   "title": "Hooks with an anchor",
+   "line": "Every hook names a tool people already know and compares honestly. No anchor, no hook.",
+   "scene": "versus",
+   "tools": "CLAUDE · HOOK CHECKS",
+   "data": {
+    "left": "capcut",
+    "right": "claude",
+    "left_label": "THE ONE THEY KNOW",
+    "right_label": "THE DISCOVERY",
+    "tag": "FREE · BETTER · OR CHEAPER"
+   },
+   "color": "#34C759"
+  },
+  {
+   "label": "JUDGE",
+   "title": "The judge",
+   "line": "12 to 20 hooks, ranked blind by a separate model, side by side. The winner opens the reel.",
+   "scene": "bars",
+   "tools": "CLAUDE · BORDA + PAIRWISE",
+   "data": {
+    "bars": [
+     [
+      "Free CapCut rival",
+      92
+     ],
+     [
+      "Stop paying for",
+      80
+     ],
+     [
+      "Nobody talks about",
+      71
+     ],
+     [
+      "I tested it",
+      58
+     ]
+    ],
+    "tag": "BLIND · SIDE BY SIDE"
+   },
+   "color": "#00B8A9"
+  },
+  {
+   "label": "SCRIPT",
+   "title": "The script",
+   "line": "Written beat by beat for a reel, then checked by code: length, one idea, the claims against the sources.",
+   "scene": "doc",
+   "tools": "CLAUDE CODE · PYTHON CHECKS",
+   "data": {
+    "file": "SCRIPT.JSON · REEL 41",
+    "checks": [
+     "30 TO 45 SECONDS",
+     "HOOK UNDER 3 SECONDS",
+     "EVERY CLAIM SOURCED",
+     "NO AI WORDS"
+    ]
+   },
+   "color": "#32ADE6"
+  },
+  {
+   "label": "VOICE",
+   "title": "The voice",
+   "line": "A local voice reads the script. Every line is transcribed back and checked word by word before it is kept.",
+   "scene": "wave",
+   "tools": "KOKORO TTS · FASTER-WHISPER",
+   "data": {
+    "words": [
+     [
+      "Stop",
+      "0.12s"
+     ],
+     [
+      "paying",
+      "0.31s"
+     ],
+     [
+      "for",
+      "0.58s"
+     ],
+     [
+      "CapCut",
+      "0.72s"
+     ]
+    ],
+    "tag": "WORD ERROR RATE 0.0%"
+   },
+   "color": "#007AFF"
+  },
+  {
+   "label": "RECORDINGS",
+   "title": "Screen recordings",
+   "line": "Claude opens the tool in Chrome and records its real screens, so the reel shows the product, not stock footage.",
+   "scene": "browser",
+   "tools": "CHROME · PLAYWRIGHT",
+   "data": {
+    "url": "the-tool.app/editor",
+    "cells": [
+     [
+      "TIMELINE",
+      "Cut"
+     ],
+     [
+      "EFFECTS",
+      "Free"
+     ],
+     [
+      "EXPORT",
+      "4K"
+     ]
+    ],
+    "tag": "CLICK LOG · 4 CLICKS · 9.8 S"
+   },
+   "color": "#5856D6"
+  },
+  {
+   "label": "VISUAL PLAN",
+   "title": "The visual plan",
+   "line": "Three visual routes are drafted, a judge picks one, and every scene is planned on the word the voice says.",
+   "scene": "phone",
+   "tools": "CLAUDE OPUS · ROUTES",
+   "data": {
+    "mode": "grid",
+    "head": "STORYBOARD · 9 SCENES",
+    "cells": [
+     "HOOK",
+     "CARD",
+     "SCREEN",
+     "ZOOM",
+     "SPLIT",
+     "LIST",
+     "DEMO",
+     "PRICE",
+     "ASK"
+    ],
+    "chips": [
+     "ROUTE B CHOSEN",
+     "A SCENE EVERY 2 S",
+     "ON THE WORD"
+    ],
+    "coin": "claude"
+   },
+   "color": "#AF52DE"
+  },
+  {
+   "label": "BUILD",
+   "title": "Motion graphics",
+   "line": "Every layer is code: the paper canvas, the cards, the text, the captions, the mascot. Nothing stands still for half a second.",
+   "scene": "layers",
+   "tools": "HYPERFRAMES · GSAP",
+   "data": {
+    "layers": [
+     [
+      "PAPER",
+      "paper"
+     ],
+     [
+      "CARDS",
+      "cards"
+     ],
+     [
+      "TEXT",
+      "text"
+     ],
+     [
+      "CAPTIONS",
+      "caption"
+     ],
+     [
+      "MASCOT",
+      "mascot"
+     ]
+    ],
+    "tag": "5 LAYERS · 1080x1920",
+    "text": "THE FREE TOOL",
+    "caption": [
+     "free",
+     "alternative"
+    ]
+   },
+   "color": "#FF2D55"
+  },
+  {
+   "label": "SOUND",
+   "title": "Sound design",
+   "line": "A pop on every card, a whoosh on every cut, chosen from a sound map so no reel sounds the same.",
+   "scene": "sound",
+   "tools": "SFX MAP · FFMPEG",
+   "data": {
+    "cues": [
+     "POP",
+     "WHOOSH",
+     "CLICK",
+     "POP",
+     "DING"
+    ],
+    "tag": "MIX · VOICE ON TOP"
+   },
+   "color": "#8E6E4E"
+  },
+  {
+   "label": "REVIEW",
+   "title": "The editor agent",
+   "line": "A reviewer watches the draft, scores it on nine things, and sends each problem back to the step that caused it.",
+   "scene": "qa",
+   "tools": "CLAUDE OPUS · FILMSTRIPS",
+   "data": {
+    "scores": [
+     [
+      "HOOK",
+      5
+     ],
+     [
+      "ENERGY",
+      4
+     ],
+     [
+      "TEXT",
+      5
+     ],
+     [
+      "SOUND",
+      3
+     ]
+    ],
+    "tag": "SOUND 3/5 · BACK TO STEP 11"
+   },
+   "color": "#1FA2B8"
+  },
+  {
+   "label": "CAPTION",
+   "title": "The caption",
+   "line": "The hook as the first line, one clear ask, three hashtags, and a pass that strips every AI-sounding word.",
+   "scene": "phone",
+   "tools": "CLAUDE · HUMANIZE CHECK",
+   "data": {
+    "mode": "caption",
+    "head": "CAPTION · REEL 41",
+    "lines": [
+     "Stop paying for CapCut.",
+     "This free editor does the same, and it runs in your browser.",
+     "Comment EDIT and I'll send the link.",
+     "#videoediting #capcut #freetools"
+    ],
+    "chips": [
+     "HOOK = LINE 1",
+     "3 HASHTAGS",
+     "NO AI TELLS"
+    ],
+    "coin": "instagram"
+   },
+   "color": "#FF6B00"
+  },
+  {
+   "label": "READY",
+   "title": "Ready to post",
+   "line": "Every finished reel lands on a dashboard with its caption. You check it and post. It never posts by itself.",
+   "scene": "dash",
+   "tools": "DASHBOARD · YOUR CALL",
+   "data": {
+    "file": "READY TO POST",
+    "cards": [
+     [
+      "REEL 41",
+      "READY"
+     ],
+     [
+      "REEL 40",
+      "POSTED"
+     ],
+     [
+      "REEL 39",
+      "POSTED"
+     ],
+     [
+      "REEL 42",
+      "RENDERING"
+     ],
+     [
+      "REEL 43",
+      "SCRIPT"
+     ],
+     [
+      "REEL 44",
+      "QUEUED"
+     ]
+    ],
+    "tag": "YOU POST · IT PREPARES",
+    "coin": "instagram"
+   },
+   "color": "#0A0A0A"
+  }
+ ],
+ "ads": {
+  "5": {
+   "kind": "comment",
+   "word": "REELS",
+   "title": "Comment [[REELS]] and get the full pipeline",
+   "line": "Every stage, every prompt, the checks that make it work.",
+   "tag": "THE WHOLE REEL PIPELINE",
+   "logo": "instagram"
+  },
+  "15": {
+   "kind": "discord",
+   "sticker": "ALL OF IT",
+   "title": "The full Instagram system is [[free]] on my Discord",
+   "line": "The discovery engine, the reel runner, the dashboard. Take it."
+  },
+  "last": {
+   "kind": "save",
+   "file": "SETUP CHECKLIST",
+   "items": [
+    "Install Claude Code",
+    "Make the idea queue",
+    "Add the voice",
+    "Build the first reel"
+   ],
+   "tag": "SAVE IT FOR LATER",
+   "title": "Save this, then DM me [[IG]]",
+   "line": "I'll send you the setup checklist. Follow first, so my message reaches you."
+  }
+ }
+}

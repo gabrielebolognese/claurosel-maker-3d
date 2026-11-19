@@ -1,0 +1,23 @@
+{
+  "name": "claurosel-maker-3d",
+  "description": "2.5D isometric Instagram, LinkedIn and X carousels made by Claude: 1080x1440 PNG slides from a topic, 20 scenes, 4 call-to-action slides, round 3D logo coins.",
+  "version": "1.0.0",
+  "author": {
+    "name": "FlashFX"
+  },
+  "homepage": "https://github.com/gabrielebolognese/claurosel-maker-3d",
+  "repository": "https://github.com/gabrielebolognese/claurosel-maker-3d",
+  "license": "MIT",
+  "keywords": [
+    "carousel",
+    "instagram",
+    "linkedin",
+    "x",
+    "slides",
+    "isometric",
+    "3d",
+    "design",
+    "skill"
+  ],
+  "icon": ".claude-plugin/icon.png"
+}

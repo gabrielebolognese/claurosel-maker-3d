@@ -1,0 +1,20 @@
+{"title": "Meal prep for\nthe whole week\nin [[90 minutes]]", "subtitle": "7 STEPS · SUNDAY ONLY · 5 DAYS OF FOOD", "label": "MEAL PREP SYSTEM",
+ "logo": "chefco", "hub_logo": "youtube", "hub_text": "SUNDAY · 90 MIN", "platform": "instagram", "logos": {"chefco": {"bg": "#2E7D32", "text": "MP"}},
+ "steps": [
+  {"label": "PLAN", "title": "Plan 3 meals", "line": "Pick three recipes that share at least five ingredients, so one shop covers the whole week.", "scene": "stack", "tools": "NOTES APP",
+   "data": {"rows": ["Chicken rice bowls", "Lentil curry", "Pasta salad", "Overnight oats", "Snack boxes"], "tag": "THIS WEEK", "first_label": "MON"}},
+  {"label": "SHOP", "title": "One shop", "line": "One list sorted by aisle. It takes 25 minutes instead of three trips during the week.", "scene": "doc", "tools": "SHOPPING LIST",
+   "data": {"file": "LIST · 23 ITEMS", "checks": ["SORTED BY AISLE", "SHARED INGREDIENTS", "NO SNACK AISLE", "UNDER 60 DOLLARS"]}},
+  {"label": "BATCH", "title": "Batch cook", "line": "Oven, stove and rice cooker at the same time: three things cooking, one hour.", "scene": "clock", "tools": "OVEN · STOVE",
+   "data": {"hours": [1, 3, 6, 9], "chips": ["0:00 OVEN ON", "0:10 RICE", "0:25 CURRY", "1:00 DONE"]}},
+  {"label": "PORTION", "title": "Portion it", "line": "Fifteen boxes, each labelled with the day, so nobody has to decide anything on a Tuesday.", "scene": "dash", "tools": "15 BOXES",
+   "data": {"file": "FRIDGE", "cards": [["MON LUNCH", "READY"], ["MON DINNER", "READY"], ["TUE LUNCH", "READY"], ["TUE DINNER", "READY"], ["WED LUNCH", "FREEZER"], ["WED DINNER", "FREEZER"]], "tag": "LABELLED BY DAY"}},
+  {"label": "COST", "title": "The real cost", "line": "Homemade boxes against takeaway for the same five days.", "scene": "bars", "tools": "PER WEEK",
+   "data": {"bars": [["Meal prep", 58], ["Takeaway", 140], ["Mixed", 95]], "win": 0, "k": 2.2}},
+  {"label": "FREEZE", "title": "Freeze half", "line": "Wednesday to Friday go in the freezer, so the food on Friday tastes like Monday.", "scene": "gate", "tools": "FREEZER",
+   "data": {"tag": "DAYS 3 TO 5 · FREEZER", "fail": "LEFT OUT"}},
+  {"label": "REPEAT", "title": "Repeat it", "line": "Rotate four menus. After a month you never plan from zero again.", "scene": "versus", "tools": "4 MENUS",
+   "data": {"left": "chefco", "right": "youtube", "left_label": "YOUR MENU", "right_label": "NEW RECIPES", "tag": "ROTATE EVERY 4 WEEKS"}}
+ ],
+ "ads": {"4": {"kind": "comment", "word": "PREP", "title": "Comment [[PREP]] for my 4 menus", "line": "The four rotating menus with every shopping list.", "tag": "4 MENUS · 4 LISTS"},
+         "last": {"kind": "dm", "word": "LIST", "you": "Want the shopping lists? DM me [[LIST]]", "reply": "sending all four", "title": "DM me [[LIST]] for the lists", "line": "Follow first, so my message reaches you."}}}
